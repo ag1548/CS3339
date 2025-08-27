@@ -1,0 +1,234 @@
+	.file	"main.cpp"
+	.text
+#APP
+	.globl _ZSt21ios_base_library_initv
+	.section	.rodata
+.LC0:
+	.string	"Enter x: "
+.LC1:
+	.string	"x is 0"
+.LC2:
+	.string	"x is 1"
+.LC3:
+	.string	"x is 2"
+.LC4:
+	.string	"x is 3"
+.LC5:
+	.string	"x is 4"
+.LC6:
+	.string	"x is 5"
+.LC7:
+	.string	"x is 6"
+.LC8:
+	.string	"x is 7"
+.LC9:
+	.string	"x is 8"
+.LC10:
+	.string	"x is 9"
+#NO_APP
+	.text
+	.globl	main
+	.type	main, @function
+main:
+.LFB1988:
+	.cfi_startproc
+	endbr64
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 6
+	subq	$16, %rsp
+	movq	%fs:40, %rax
+	movq	%rax, -8(%rbp)
+	xorl	%eax, %eax
+	leaq	.LC0(%rip), %rax
+	movq	%rax, %rsi
+	leaq	_ZSt4cout(%rip), %rax
+	movq	%rax, %rdi
+	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
+	leaq	-12(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	_ZSt3cin(%rip), %rax
+	movq	%rax, %rdi
+	call	_ZNSirsERi@PLT
+	movl	-12(%rbp), %eax
+	cmpl	$9, %eax
+	ja	.L2
+	movl	%eax, %eax
+	leaq	0(,%rax,4), %rdx
+	leaq	.L4(%rip), %rax
+	movl	(%rdx,%rax), %eax
+	cltq
+	leaq	.L4(%rip), %rdx
+	addq	%rdx, %rax
+	notrack jmp	*%rax
+	.section	.rodata
+	.align 4
+	.align 4
+.L4:
+	.long	.L13-.L4
+	.long	.L12-.L4
+	.long	.L11-.L4
+	.long	.L10-.L4
+	.long	.L9-.L4
+	.long	.L8-.L4
+	.long	.L7-.L4
+	.long	.L6-.L4
+	.long	.L5-.L4
+	.long	.L3-.L4
+	.text
+.L13:
+	leaq	.LC1(%rip), %rax
+	movq	%rax, %rsi
+	leaq	_ZSt4cout(%rip), %rax
+	movq	%rax, %rdi
+	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
+	movq	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GOTPCREL(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	_ZNSolsEPFRSoS_E@PLT
+	jmp	.L2
+.L12:
+	leaq	.LC2(%rip), %rax
+	movq	%rax, %rsi
+	leaq	_ZSt4cout(%rip), %rax
+	movq	%rax, %rdi
+	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
+	movq	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GOTPCREL(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	_ZNSolsEPFRSoS_E@PLT
+	jmp	.L2
+.L11:
+	leaq	.LC3(%rip), %rax
+	movq	%rax, %rsi
+	leaq	_ZSt4cout(%rip), %rax
+	movq	%rax, %rdi
+	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
+	movq	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GOTPCREL(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	_ZNSolsEPFRSoS_E@PLT
+	jmp	.L2
+.L10:
+	leaq	.LC4(%rip), %rax
+	movq	%rax, %rsi
+	leaq	_ZSt4cout(%rip), %rax
+	movq	%rax, %rdi
+	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
+	movq	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GOTPCREL(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	_ZNSolsEPFRSoS_E@PLT
+	jmp	.L2
+.L9:
+	leaq	.LC5(%rip), %rax
+	movq	%rax, %rsi
+	leaq	_ZSt4cout(%rip), %rax
+	movq	%rax, %rdi
+	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
+	movq	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GOTPCREL(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	_ZNSolsEPFRSoS_E@PLT
+	jmp	.L2
+.L8:
+	leaq	.LC6(%rip), %rax
+	movq	%rax, %rsi
+	leaq	_ZSt4cout(%rip), %rax
+	movq	%rax, %rdi
+	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
+	movq	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GOTPCREL(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	_ZNSolsEPFRSoS_E@PLT
+	jmp	.L2
+.L7:
+	leaq	.LC7(%rip), %rax
+	movq	%rax, %rsi
+	leaq	_ZSt4cout(%rip), %rax
+	movq	%rax, %rdi
+	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
+	movq	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GOTPCREL(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	_ZNSolsEPFRSoS_E@PLT
+	jmp	.L2
+.L6:
+	leaq	.LC8(%rip), %rax
+	movq	%rax, %rsi
+	leaq	_ZSt4cout(%rip), %rax
+	movq	%rax, %rdi
+	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
+	movq	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GOTPCREL(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	_ZNSolsEPFRSoS_E@PLT
+	jmp	.L2
+.L5:
+	leaq	.LC9(%rip), %rax
+	movq	%rax, %rsi
+	leaq	_ZSt4cout(%rip), %rax
+	movq	%rax, %rdi
+	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
+	movq	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GOTPCREL(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	_ZNSolsEPFRSoS_E@PLT
+	jmp	.L2
+.L3:
+	leaq	.LC10(%rip), %rax
+	movq	%rax, %rsi
+	leaq	_ZSt4cout(%rip), %rax
+	movq	%rax, %rdi
+	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
+	movq	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GOTPCREL(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	_ZNSolsEPFRSoS_E@PLT
+	nop
+.L2:
+	movl	$0, %eax
+	movq	-8(%rbp), %rdx
+	subq	%fs:40, %rdx
+	je	.L15
+	call	__stack_chk_fail@PLT
+.L15:
+	leave
+	.cfi_def_cfa 7, 8
+	ret
+	.cfi_endproc
+.LFE1988:
+	.size	main, .-main
+	.section	.rodata
+	.type	_ZNSt8__detail30__integer_to_chars_is_unsignedIjEE, @object
+	.size	_ZNSt8__detail30__integer_to_chars_is_unsignedIjEE, 1
+_ZNSt8__detail30__integer_to_chars_is_unsignedIjEE:
+	.byte	1
+	.type	_ZNSt8__detail30__integer_to_chars_is_unsignedImEE, @object
+	.size	_ZNSt8__detail30__integer_to_chars_is_unsignedImEE, 1
+_ZNSt8__detail30__integer_to_chars_is_unsignedImEE:
+	.byte	1
+	.type	_ZNSt8__detail30__integer_to_chars_is_unsignedIyEE, @object
+	.size	_ZNSt8__detail30__integer_to_chars_is_unsignedIyEE, 1
+_ZNSt8__detail30__integer_to_chars_is_unsignedIyEE:
+	.byte	1
+	.ident	"GCC: (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0"
+	.section	.note.GNU-stack,"",@progbits
+	.section	.note.gnu.property,"a"
+	.align 8
+	.long	1f - 0f
+	.long	4f - 1f
+	.long	5
+0:
+	.string	"GNU"
+1:
+	.align 8
+	.long	0xc0000002
+	.long	3f - 2f
+2:
+	.long	0x3
+3:
+	.align 8
+4:
