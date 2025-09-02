@@ -138,10 +138,16 @@ cat /proc/meminfo
 
 ### Obtaining code samples
 
-Clone the course git repo on this server.
+Clone the course git repo on this server, either from the TXST internal repository:
 
 ```
-git clone https://git.txstate.edu/aq10/CS3339.git
+git clone https://git.txstate.edu/ag1548/CS3339.git
+```
+
+or from the repository being hosted at Github:
+
+```
+git clone https://github.com/ag1548/CS3339.git
 ```
 
 Copy the matrix-vector multiplication code (matvec.c) to your working directory.
