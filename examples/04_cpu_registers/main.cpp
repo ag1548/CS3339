@@ -4,6 +4,7 @@ int main() {
 
     int x;
     int y;
+    int z;
 
     std::cout << "Enter x: ";
     std::cin >> x;
@@ -11,9 +12,12 @@ int main() {
     std::cout << "Enter y: ";
     std::cin >> y;
 
-    const int z = x + y;
+    std::cout << "Enter z: ";
+    std::cin >> z;
 
-    std::cout << z << std::endl;
+    const int w = y * x + z;
+
+    std::cout << w << std::endl;
 
 	return 0;
 }
