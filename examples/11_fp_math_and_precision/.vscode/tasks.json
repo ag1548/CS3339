@@ -1,0 +1,20 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "command": "g++",
+      "args": ["-o", "main", "fp_math.cpp", "-g", "-O0"]
+    },
+    {
+      "label": "build2",
+      "command": "g++",
+      "args": ["-o", "main2", "fp_precision.cpp", "-g", "-O0"]
+    },
+    {
+      "label": "rm main main2",
+      "command": "rm",
+      "args": ["main", "main2"]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "command": "g++",
+      "args": ["-o", "main", "many_faces_of_int.cpp", "-g", "-O0"]
+    },
+    {
+      "label": "rm main",
+      "command": "rm",
+      "args": ["main"]
+    }
+  ]
+}
