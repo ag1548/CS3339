@@ -20,13 +20,15 @@
  */
 
 #include<iostream>
-//#include<climits>
-#include<limits>
+#include<climits>
+// #include<limits>
 
 using std::cout;
 using std::endl;
 
 int main() {
+
+  // See https://stackoverflow.com/questions/6462439/whats-the-difference-between-long-long-and-long
 
   /* integer data types */
   cout << "Memory space taken up by different integer data types in C++" << endl << endl;
